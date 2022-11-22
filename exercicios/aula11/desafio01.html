@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limite de Velocidade</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+        p#alert{
+            background-color: rgba(165, 42, 42, 0.651);
+            width: 250px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Consulte seu limite de velocidade</h1>
+    <p id="alert">Limite máximo permitido: 60 km/h</p>
+
+    Digite sua velocidade : <input type="number" name="ivel" id="ivel"> km/h
+    
+    <input type="button" value="Calcular" onclick="velocidade()">
+    
+    <div id="veloc"></div>
+
+    <script>
+        function velocidade (){            
+            var cal = window.document.getElementById ('ivel')
+            var vel = window.document.getElementById ('veloc')
+            var res = Number(ivel.value)  // conversao da caixa de texto para numero
+
+            vel.innerHTML = `<p>Sua velocidade é de ${res}  km/h.</p>` 
+
+            if(res>60){
+                vel.innerHTML+=`<p>Você será multado pois sua velocidade foi acima do limite permitido</p>`
+                vel.style.backgroundColor='red'
+
+            } else{(res<60)
+                vel.innerHTML+=`<p>Sua velocidade está dentro do limite permitido.</p>`
+                vel.style.backgroundColor='green'
+
+            }
+        }
+
+    </script>
+
+</body>
+</html>

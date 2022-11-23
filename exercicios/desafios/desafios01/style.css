@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px ;
+}
+
+body{
+    background-color: rgba(64, 64, 126, 0.795);
+    color: white;
+    font: normal 15pt Arial;
+    text-align: center;
+    
+}
+main{
+margin: auto;
+background-color: white;
+color: black;
+width: 65vw;
+height: 40vh;
+border-radius: 20px;
+box-shadow:  1px 1px 10px  black;
+}
+
+
+#amanhecer{
+   
+    border-radius: 50%;
+}
+
+footer{
+margin-top: 20px;
+
+}

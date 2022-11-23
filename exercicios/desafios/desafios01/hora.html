@@ -8,31 +8,26 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
-    <h1>Hora do Dia</h1>
-    <main>
-        <div id="horas"></div>
+<body onload="carregar()">
 
-
-        <script>
-            
-            function agora(){
-
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    
+        <section>
+            <div id="msg"></div>
                 
-                var agora = new Date()
-                var hora = agora.getHours()
-                
+                               
+            <div id="img">
+                <img id="foto" src="imagens/amanhecer.jpg" alt="amanhecer"> 
+            </div>
 
-                res.innerHTML=(`Agora são ${horas}`)
-                    
-            }
-        </script>
-
-       <!--<img id="amanhecer" src="imagens/amanhecer.jpg" alt=""> -->  
+        </section>
 
         
-    </main>
+   
     <footer>    Maiara Gomes Rocha
     </footer>
+   <script src="ex012.js"></script>
 </body>
 </html>

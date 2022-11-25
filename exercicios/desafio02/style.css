@@ -36,7 +36,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: 20%;
+   
     
 }
 
@@ -50,10 +50,6 @@ section{
     padding: 10px;
     padding-left: 15px;
 }
-
-
-
-
 
 footer{
     padding: 20px;

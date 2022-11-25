@@ -10,13 +10,48 @@ function verificar() {
     }else{
         var fsex = document.getElementsByName('isexo')
         var idade = ano - Number(nasc.value)
-        res.innerHTML= `Você tem ${idade} anos de idade.`
-
-    }
-    if ( nasc.value >=3 && nasc.value <=11){
+        var gênero = ''
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
         
-        document.body.style.background = '#316E93'
+
+        if (fsex [0].checked){
+            gênero = 'Mulher'
+
+            if(idade>=0 && idade<12){
+                img.setAttribute('src', 'infanciaf.jpg')
+
+            }else if (idade <25){
+                img.setAttribute('src', 'jovemf.jpg')
+
+            }else if (idade <60){
+                img.setAttribute('src', 'adultof.jpg')
+
+            }else{                
+                img.setAttribute('src', 'idosof.jpg')
+            }      
+
+        }else if (fsex [1].checked){
+            gênero = 'Homem'
+            if(idade>=0 && idade<12){
+                img.setAttribute('src', 'infanciam.jpg')
+
+            }else if (idade <25){
+                img.setAttribute('src', 'jovemm.jpg')
+
+            }else if (idade <60){
+                img.setAttribute('src', 'adultom.jpg')
+
+            }else{
+                img.setAttribute('src', 'idosom.jpg')
+
+            }
+        }
+        res.style.textAlign = 'center'
+        res.innerHTML = ` Detectamos ${gênero} com ${idade} anos` 
+        res.appendChild(img)
     }
+   
 
    
 }

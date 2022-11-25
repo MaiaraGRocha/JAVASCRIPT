@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Verificador de Idade</h1></header>
+
+    <section>
+
+       <div id="datanasc">Ano de Nascimento: <input type="number" name="iidade" id="iidade"></div> <br>
+
+      <p id="sexo">Sexo:
+         <input type="radio" name="isexo" id="ifem" checked>
+        <label for="fem">Feminino</label>                  <!--coloca o mesmo nome do "name" assim vai marcar uma caixa OU outra-->
+        <input type="radio" name="isexo" id="imas">
+        <label for="masc">Masculino</label>
+      </p>
+
+        <p>
+            <input  type="button" value="Verificar" onclick="verificar()">
+        </p> <!--onclick() dispara o JS-->
+
+        <div id="frase">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        <div> <img id="foto" src="infanciam.jpg" alt="infancia"></div>
+
+    </section>
+    <footer>
+        <p> &copy; Maiara Gomes Rocha</p>
+    </footer>
+
+    <script src="desafio02.js"></script>
+    
+</body>
+</html>

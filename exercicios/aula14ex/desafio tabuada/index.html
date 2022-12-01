@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contagem</title>
     <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
 </head>
 <body>
-    <header>Vamos contar</header>
+    <header>Tabuada</header>
     <section>
         <div>
-            Início: <input type="number" name="inum" id="inum">
-            Fim :<input type="number" name="ifim" id="ifim">
-            Passo :<input type="number" name="ipasso" id="ipasso">
-        </div>
-        <div id="res">
-            <input type="button" value="Contar">
-        </div>
+            Número:<input type="number" name="inum" id="inum">
+
+            <input   type="button" value="Gerar Tabuada" onclick="Tabuada">
+        </div><br>
+
+       
+        <select  name="iresultado" id="ires">
+           
+        </select>
+
     </section>
     <footer>MaiaraGRocha</footer>
+    <script src="tabuada.js"></script>
     
 </body>
 </html>

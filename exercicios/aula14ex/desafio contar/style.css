@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+   
+*{
+    margin: 0px;
+    padding: 0px;
+    font: normal 12pt Arial    ;
+    
+   
+}
+    
+body{
+    background-color: rgba(77, 77, 161, 0.514);
+}
+
+header{
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font: normal 20pt arial;
+}
+#dados{
+    
+
+}
+
+#res{
+    margin: 20px;
+}
+
+p{
+    margin: 7px;
+}
+
+section{  
+   
+    margin: auto;
+    width: 40%;  
+    height: 200px;
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 10px;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    color: white;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,39 @@
     <title>Tabuada</title>
 </head>
 <body>
-    <header>Tabuada</header>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
     <section>
         <div>
-            Número:<input type="number" name="inum" id="inum">
+            <p>Número:
+                <input type="number" name="inum" id="inum">
 
-            <input   type="button" value="Gerar Tabuada" onclick="Tabuada">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+                
+            </p>
+
+            
         </div><br>
-
-       
-        <select  name="iresultado" id="ires">
            
-        </select>
+             
+        <div>
+            
+            <select name="tabuada " id="ires" size="10"> <!--size deixa o select do tamanho que vc quer-->
+                <option >Digite um número acima</option>
+            </select>
+        </div>
+           
+        
+       
+        
+           
+       
 
     </section>
     <footer>MaiaraGRocha</footer>
-    <script src="tabuada.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>

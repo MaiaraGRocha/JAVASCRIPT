@@ -21,18 +21,25 @@ header{
 
 section{    
     margin: auto;
-    width: 40%;  
+    width: 48%;  
     height: 200px;
     background-color: white;
-
     padding: 30px;
     border-radius: 10px;
 }
+p,#res,#but{
+    padding: 5px;
+    font: normal 12pt Arial;
+    text-align: center;
+}
+
+
 
 
 footer{
     padding: 30px;
     text-align: center;
     color: white;
+    font: normal 12pt Arial;
 }
 

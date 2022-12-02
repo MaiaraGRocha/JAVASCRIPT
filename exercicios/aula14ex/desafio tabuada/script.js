@@ -6,9 +6,10 @@ function tabuada() {
     if(num.value.length == 0){
         window.alert('Por favor, digite um número...')
     } else {
+
         let n = Number(num.value)
         let c = 0
-        res.innerHTML= '' //antes de mostrar a tabuada vai limpar a area de tabuada
+        res.innerHTML='' //antes de mostrar a tabuada vai limpar a area de tabuada
         while (c <= 10){
             let item = document.createElement('option') //criou o elemento do tipo 'option' . Mesma coisa de criar 'option' no <select> do html.
             item.text = `${n} x ${c} = ${n*c}`

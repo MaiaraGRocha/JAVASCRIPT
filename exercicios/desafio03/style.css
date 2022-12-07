@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font: normal 12pt Arial    ;
+    
+   
+}
+
+body{
+    
+    background-color: rgba(7, 98, 235, 0.541);
+    margin: 50px;
+    padding: 20px;
+}
+
+h1{   
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font: bold 20pt Arial ;
+   
+}
+
+
+section{
+    color: black;
+    margin: auto;
+    width: 480px;     
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#value{
+    width: 150px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: medium;
+
+
+}
